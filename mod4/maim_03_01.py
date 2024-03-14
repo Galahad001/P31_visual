@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from  main_03 import Rand
+from main_03 import Rand
 
 # # Построения случайного блуждания 
 # rw = Rand()
@@ -17,6 +17,7 @@ from  main_03 import Rand
 
 # Генерация блуждания строица пока не выйдем
 while True:
+#  Построения случайного блуждания
  rw = Rand(50000)
  rw.walk()
 
@@ -24,6 +25,7 @@ while True:
  plt.style.use('classic')
  fig,ax =plt.subplots(figsize=(15, 9))
 #  Генерируем список чисел - список равен количеству точек
+#  Генерирует список чисел, размер которого равен количеству точек блуждания.
  point_num = range(rw.col_point)
  ax.scatter(rw.x_arr, rw.y_arr, c=point_num, cmap=plt.cm.Blues, edgecolors='none', s=1)
 #  edgecolors - убираем черный контур у точек

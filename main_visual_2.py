@@ -1,4 +1,4 @@
-from main_cub import Cub
+from mod5.main_cub import Cub
 # Построим гистограмму
 from plotly.graph_objs import Bar, Layout
 from plotly import offline
